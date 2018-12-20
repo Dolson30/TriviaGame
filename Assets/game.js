@@ -27,7 +27,7 @@ var question2 = {
     userAnswer: ""
 };
 var question3 = {
-    question: "What does Mr. Shirley call Clark when Clark is dropping off the gift?",
+    question: "What does Mr. Shirley call Clark in the hallway?",
     correctAnswer: "Mark",
     answers: [
         "Clark", "Mark", "Bill", "Frank"
@@ -67,7 +67,7 @@ var question7 = {
     userAnswer: ""
 };
 var question8 = {
-    question: "How many times more slippery is Clark's 'non-caloric silicon-based kitchen lubricant' than any cooking oil?",
+    question: "How much more slippery is Clark's 'non-caloric silicon-based kitchen lubricant' than any cooking oil?",
     correctAnswer: "500x",
     answers: [
         "500x","200x","300x","600x"
@@ -83,7 +83,7 @@ var question9 = {
     userAnswer: ""
 };
 var question10 = {
-    question: "What is the name of the store to Clark and Eddie go shopping together?",
+    question: "What is the name of the store where Clark and Eddie go shopping together?",
     correctAnswer: "Wal-Mart",
     answers: [
         "K-Mart","The Mall","Wal-Mart","Target"
