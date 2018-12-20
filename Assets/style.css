@@ -1,0 +1,16 @@
+body
+{
+    background-image: url('images/bg.jpg');
+    display:flex;
+  align-items:center;
+  background-size: 100%;
+}
+
+.col-md-6 {
+    background-color: #f5f3f3;
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
