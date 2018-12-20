@@ -1,10 +1,14 @@
 var currentQ = 0;
-var timeLeft=10;
+var timeLeft=15;
 var countdown = false;
 var inGame = false;
 var intervalId;
 var incorrect = 0;
 var correct = 0;
+var great = document.getElementById("great");
+var good = document.getElementById('good');
+var bad = document.getElementById("bad");
+
 
 var question1 = {
     question: "In order to distract the family in the car, what animal did Clark tell them he saw?",
@@ -139,7 +143,7 @@ window.onload = function() {
           incorrect = 0;
           correct =0;
           currentQ = 0;
-          timeLeft = 10;
+          timeLeft = 15;
             $("#start").remove();  
             $("#question").text("")
             $("#answer1").text("")
@@ -181,7 +185,7 @@ window.onload = function() {
                     $("#answer2").text(questionArray[currentQ].answers[1])
                     $("#answer3").text(questionArray[currentQ].answers[2])
                     $("#answer4").text(questionArray[currentQ].answers[3])
-                    timeLeft = 10;
+                    timeLeft = 15;
                     $("#timer").text(timeLeft);
                     clearInterval(intervalId);
                     intervalId = setInterval(count,1000);
@@ -212,7 +216,7 @@ window.onload = function() {
         $("#answer2").text(questionArray[currentQ].answers[1])
         $("#answer3").text(questionArray[currentQ].answers[2])
         $("#answer4").text(questionArray[currentQ].answers[3])
-        timeLeft = 10;
+        timeLeft = 15;
         $("#timer").text(timeLeft);
         clearInterval(intervalId);
         intervalId = setInterval(count,1000);
@@ -241,6 +245,18 @@ window.onload = function() {
     $("#question-row").append("<h3 id='reload-text'>Reload Page to try again! Or Click Below to reveal Answers.");
     $("#question-row").append("<button id=reveal>Click to reveal answers");
     $("#question-row").append("<button id=newGame>Click to retry");
+    if(correct <= 5)
+    {
+        bad.play();
+    }
+    else if(correct > 5 && correct <= 10)
+    {
+        good.play();
+    }
+    else
+    {
+        great.play();
+    }
 
    }
 
@@ -275,6 +291,7 @@ window.onload = function() {
         }
         
     }
+
     $("#question-row").append("<h2>Final Score: " +correct + "/15");
     $("#question-row").append("<button id=newGame>Click to retry");
    }
