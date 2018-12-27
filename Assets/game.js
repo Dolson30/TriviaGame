@@ -242,7 +242,7 @@ window.onload = function() {
         
     }
     $("#question-row").append("<h2 id='score'>Final Score: " +correct + "/15");
-    $("#question-row").append("<h3 id='reload-text'>Reload Page to try again! Or Click Below to reveal Answers.");
+    $("#question-row").append("<h3 id='reload-text'>Select Retry to try again! Or Click Below to reveal Answers.");
     $("#question-row").append("<button id=reveal>Click to reveal answers");
     $("#question-row").append("<button id=newGame>Click to retry");
     if(correct <= 5)

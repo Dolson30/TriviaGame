@@ -16,9 +16,14 @@ body
 }
 
 
-#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover
-{
- 
-        background:grey;
 
+@media (hover: hover) 
+{
+
+        #answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover
+        {
+        
+                background:grey;
+
+        } 
 }
